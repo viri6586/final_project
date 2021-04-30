@@ -13,8 +13,14 @@ How to use app:
 The project allows you to choose between a grid or layout simply by selecting the button
 You navigate the visualization by clicking and dragging your mouse
 You can change the Z coordinates (zoom in/out) by scrolling with your mouse
-If you want to return to the default view click "Reset Camera"
+If you want to return to the default view click 'Reset Camera'
 
+To change number of discs/circles in the array:
+open file named 'App.js'
+go to line 12, it should look like this:
 
+"   const data = new Array(10000).fill(0).map((d, id) => ({ id }));    "
+
+To change the number of discs simply replace the element within the 'new Array(X)' constructor
 
 
